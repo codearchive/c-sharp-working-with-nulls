@@ -7,7 +7,7 @@ namespace module_02
         static void Main()
         {
             var player = new PlayerCharacter();
-            player.Name = "Sarah";
+            player.Name = "     ";
             // player.DaysSinceLastLogin = 42;
 
             PlayerDisplayer.Write(player);
