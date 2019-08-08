@@ -14,8 +14,8 @@ namespace module_02
 
         public string Name { get; set; }
 
-        public Nullable<int> DaysSinceLastLogin { get; set; }
+        public int? DaysSinceLastLogin { get; set; } // Nullable<int> = int?
 
-        public Nullable<DateTime> DateOfBirth { get; set; }
+        public DateTime? DateOfBirth { get; set; } // Nullable<DateTime> = DateTime?
     }
 }
