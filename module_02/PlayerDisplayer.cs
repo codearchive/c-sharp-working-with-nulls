@@ -10,7 +10,7 @@ namespace module_02
         {
             Console.WriteLine(player.Name);
 
-            if (player.DaysSinceLastLogin == -1)
+            if (player.DaysSinceLastLogin == null)
             {
                 Console.WriteLine("No value for DaysSinceLastLogin");
             }
@@ -19,7 +19,7 @@ namespace module_02
                 Console.WriteLine(player.DaysSinceLastLogin);
             }
 
-            if (player.DateOfBirth == DateTime.MinValue)
+            if (player.DateOfBirth == null)
             {
                 Console.WriteLine("No date of birth specified");
             }

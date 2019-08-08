@@ -8,14 +8,14 @@ namespace module_02
     {
         public PlayerCharacter()
         {
-            DateOfBirth = DateTime.MinValue; // Magic number
-            DaysSinceLastLogin = -1; // Magic number
+            DateOfBirth = null;
+            DaysSinceLastLogin = null;
         }
 
         public string Name { get; set; }
 
-        public int DaysSinceLastLogin { get; set; }
+        public Nullable<int> DaysSinceLastLogin { get; set; }
 
-        public DateTime DateOfBirth { get; set; }
+        public Nullable<DateTime> DateOfBirth { get; set; }
     }
 }
