@@ -17,5 +17,7 @@ namespace module_02
         public int? DaysSinceLastLogin { get; set; } // Nullable<int> = int?
 
         public DateTime? DateOfBirth { get; set; } // Nullable<DateTime> = DateTime?
+
+        public bool? IsNoob { get; set; } // default value is "null"
     }
 }
