@@ -6,11 +6,15 @@ namespace module_03
     {
         static void Main()
         {
-            var player = new PlayerCharacter();
-            player.Name = "     ";
+            PlayerCharacter player = new PlayerCharacter();
             player.DaysSinceLastLogin = 42;
 
-            PlayerDisplayer.Write(player);
+            int days = player?.DaysSinceLastLogin ?? -1;
+
+
+            //int days = player.DaysSinceLastLogin.Value;
+
+            Console.WriteLine(days);
         }
     }
 }
