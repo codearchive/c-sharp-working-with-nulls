@@ -17,14 +17,18 @@ namespace module_03
                 Console.WriteLine(player.Name);
             }
 
-            if (player.DaysSinceLastLogin.HasValue)
-            {
-                Console.WriteLine(player.DaysSinceLastLogin.Value);
-            }
-            else
-            {
-                Console.WriteLine("No value for DaysSinceLastLogin");
-            }
+            int days = player.DaysSinceLastLogin.GetValueOrDefault(-1);
+            Console.WriteLine($"{days} days since last login");
+
+
+            //if (player.DaysSinceLastLogin.HasValue)
+            //{
+            //    Console.WriteLine(player.DaysSinceLastLogin.Value);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("No value for DaysSinceLastLogin");
+            //}
 
             if (player.DateOfBirth == null)
             {
