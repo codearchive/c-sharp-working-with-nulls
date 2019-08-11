@@ -14,7 +14,7 @@ namespace module_04
             {
                 Name = "Amrit"
             };
-            PlayerCharacter gentry = new PlayerCharacter(null)
+            PlayerCharacter gentry = new PlayerCharacter(new NullDefence())
             {
                 Name = "Gentry"
             };

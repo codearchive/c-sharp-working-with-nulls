@@ -19,14 +19,16 @@ namespace module_04
 
         public void Hit(int damage)
         {
-            int damageReduction = 0;
+            //int damageReduction = 0;
 
-            if (_specialDefence != null)
-            {
-                damageReduction = _specialDefence.CalculateDamageReduction(damage);
-            }
+            //if (_specialDefence != null)
+            //{
+            //    damageReduction = _specialDefence.CalculateDamageReduction(damage);
+            //}
 
-            int totalDamageTaken = damage - damageReduction;
+            //int totalDamageTaken = damage - damageReduction;
+
+            int totalDamageTaken = damage - _specialDefence.CalculateDamageReduction(damage);
 
             Health -= totalDamageTaken;
 
