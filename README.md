@@ -9,3 +9,4 @@ This repository aims to learn C# language and improving skills with the course b
 - Module 1 - Course Overview
 - [Module 2 - Working with Nullable Value Types and Strings](module_02)
 - [Module 3 - Accessing and Checking for Null Values](module_03)
+- [Module 4 - Eliminating Null Reference Exceptions](module_04)
